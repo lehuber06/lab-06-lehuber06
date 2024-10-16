@@ -1,8 +1,8 @@
-# Your Name Here
+# Lee Huber
 # UWYO COSC 1010
 # Submission Date
 # Lab 06
-# Lab Section: 
+# Lab Section: 15
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -79,9 +79,29 @@ print(len(random_string)) # Print out the size for reference
     # You will  need to add the letter to the dictionary on first occurrence 
     # Then increment its corresponding count 
 
+sorted_letters = []
+
+for char in random_string:
+    sorted_letters.append(char)
+
+sorted_letters.sort()
 
 #Load all the elements into a dictionary
 #Will need to first declare a dictionary 
+
+letter_values = {}
+letter_count = 0
+letter_index = 0
+
+
+for char in sorted_letters:
+    letter_index += 1
+    letter_count += 1
+    letter_values[char] = letter_count
+    if sorted_letters[letter_index - 1] != char:
+        letter_count = 0
+
+print(letter_values)
 
 # Output: each letter and its corresponding occurrence in alphabetical order
 
