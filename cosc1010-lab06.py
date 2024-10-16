@@ -1,6 +1,6 @@
 # Lee Huber
 # UWYO COSC 1010
-# Submission Date
+# Submission Date: 10/16/24
 # Lab 06
 # Lab Section: 15
 # Sources, people worked with, help given to: 
@@ -102,6 +102,8 @@ for char in sorted_letters:
         letter_count = 1
     
     letter_index += 1
+
+print(letter_values)
 
 # Output: each letter and its corresponding occurrence in alphabetical order
 
