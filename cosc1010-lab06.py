@@ -135,4 +135,4 @@ percentage = 0
 
 for letter, value in letter_values.items():
     percentage = (value/len(random_string))*100
-    print(f"{letter} is {percentage}% of random string")
+    print(f"{letter} was {percentage}% of random string")
